@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Oct 28 19:35:10 2023
+# Process ID: 11452
+# Current directory: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643
+# Command line: vivado.exe -mode tcl -source labo_3_synth_impl.tcl
+# Log file: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643/vivado.log
+# Journal file: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643\vivado.jou
+# Running On: Steila, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 51462 MB
+#-----------------------------------------------------------
+source labo_3_synth_impl.tcl
