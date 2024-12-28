@@ -1,16 +1,25 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Oct 28 19:35:10 2023
-# Process ID: 11452
-# Current directory: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643
-# Command line: vivado.exe -mode tcl -source labo_3_synth_impl.tcl
-# Log file: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643/vivado.log
-# Journal file: C:/Users/druet/Documents/INF3500/labo-3-2023a-2198643_2207643\vivado.jou
-# Running On: Steila, OS: Windows, CPU Frequency: 3800 MHz, CPU Physical cores: 16, Host memory: 51462 MB
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Dec 28 00:26:29 2024
+# Process ID         : 32239
+# Current directory  : /home/yanarion/Projet/basys3_enigme_scout
+# Command line       : vivado -mode tcl synthese-implementation/labo_3_synth_impl.tcl
+# Log file           : /home/yanarion/Projet/basys3_enigme_scout/vivado.log
+# Journal file       : /home/yanarion/Projet/basys3_enigme_scout/vivado.jou
+# Running On         : YannTourArch
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor
+# CPU Frequency      : 3882.159 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 50435 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 54730 MB
+# Available Virtual  : 46996 MB
 #-----------------------------------------------------------
-source labo_3_synth_impl.tcl
-couldn't read file "labo_3_synth_impl.tcl": no such file or directory
-Vivado% 
+open_project synthese-implementation/labo_3_synth_impl.tcl
+ERROR: [Coretcl 2-1982] Invalid project file name. File must have a valid project extension (.ppr/.xpr). Provided: synthese-implementation/labo_3_synth_impl.tcl

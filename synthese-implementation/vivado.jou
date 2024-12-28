@@ -3,22 +3,22 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Nov 19 00:44:29 2024
-# Process ID         : 4549
-# Current directory  : /home/yanarion/Documents/INF3500/labo-3-2023a-2198643_2207643/synthese-implementation
-# Command line       : vivado -mode tcl -source labo_3_synth_impl.tcl
-# Log file           : /home/yanarion/Documents/INF3500/labo-3-2023a-2198643_2207643/synthese-implementation/vivado.log
-# Journal file       : /home/yanarion/Documents/INF3500/labo-3-2023a-2198643_2207643/synthese-implementation/vivado.jou
+# Start of session at: Sat Dec 28 00:52:28 2024
+# Process ID         : 104925
+# Current directory  : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation
+# Command line       : vivado -mode tcl -script labo_3_synth_impl.tcl
+# Log file           : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.log
+# Journal file       : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.jou
 # Running On         : YannTourArch
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor
-# CPU Frequency      : 4541.669 MHz
+# CPU Frequency      : 3872.580 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
-# Host memory        : 50438 MB
+# Host memory        : 50435 MB
 # Swap memory        : 4294 MB
-# Total Virtual      : 54733 MB
-# Available Virtual  : 53014 MB
+# Total Virtual      : 54730 MB
+# Available Virtual  : 27065 MB
 #-----------------------------------------------------------
 source labo_3_synth_impl.tcl

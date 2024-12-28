@@ -67,7 +67,7 @@ begin
             clk => clk_50_Hz,
             reset => btnC_stable,
             boutons(3 downto 0) => (btnD_stable, btnL_stable, btnU_stable, btnR_stable),
-            mode => (sw(1), sw(0)),
+            switch => sw,
             ouvrir => led(0),
             alarme => led(1),
             message => message

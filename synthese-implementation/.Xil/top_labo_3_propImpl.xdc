@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/yanarion/Documents/INF3500/labo-3-2023a-2198643_2207643/xdc/basys_3_top.xdc rfile:../../xdc/basys_3_top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc rfile:../../xdc/basys_3_top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
