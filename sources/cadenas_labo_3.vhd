@@ -45,7 +45,7 @@ begin
         if reset = '1' then -- remet la state machine a 0
             etat <= e_00;
         elsif rising_edge(clk) then
-            if switch(0) = '1' then
+            if switch = "0000000000000001" then
                 etat <= e_01;
             else
                 etat <= e_00;

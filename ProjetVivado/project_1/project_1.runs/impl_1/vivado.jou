@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Dec 28 16:59:01 2024
+# Process ID         : 160997
+# Current directory  : /home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.runs/impl_1
+# Command line       : vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file           : /home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.runs/impl_1/top.vdi
+# Journal file       : /home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.runs/impl_1/vivado.jou
+# Running On         : YannTourArch
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor
+# CPU Frequency      : 4388.020 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 50435 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 54730 MB
+# Available Virtual  : 9380 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

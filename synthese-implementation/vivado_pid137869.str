@@ -1,0 +1,743 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 137869
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Dec 28 16:34:58 EST 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Linux
+OS Version: 6.12.6-arch1-1
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 1680, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	yanarion
+User home directory: /home/yanarion
+User working directory: /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home/yanarion/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/yanarion/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/yanarion/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.log
+Vivado journal file: 	/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-137869-YannTourArch
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Default:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation:YannTourArch_1735421688_137809
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /usr/bin/zsh
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,374 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 66 MB. Current time: 12/28/24, 4:34:59 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 123 seconds
+selectMoreButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null, "New Project"); // s (PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION)
+dismissFolderChooser();
+setText(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, "/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation"); // Z (PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION)
+// Elapsed time: 21 seconds
+selectMoreButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null, "New Project"); // s (PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION)
+// Elapsed time: 14 seconds
+dismissFolderChooser();
+selectButton("CANCEL", "Cancel", "New Project"); // JButton (CANCEL)
+// 'g' command handler elapsed time: 163 seconds
+dismissDialog("New Project"); // f (dialog0)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 66 MB. Current time: 12/28/24, 4:37:49 PM EST
+// Elapsed time: 33 seconds
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // t (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+dismissFileChooser();
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,421 MB. GUI used memory: 71 MB. Current time: 12/28/24, 4:38:24 PM EST
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectMoreButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null, "New Project"); // s (PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado");
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectRadioButton(PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD, "RTL Project. You will be able to add sources, create block designs in IP Integrator, generate IP, run RTL analysis, synthesis, implementation, design planning and analysis."); // b (PAResourceItoN.NewProjectWizard_RTL_PROJECT_YOU_WILL_BE_ABLE_TO_ADD)
+selectRadioButton(PAResourceItoN.NewProjectWizard_POST_SYNTHESIS_PROJECT_YOU_WILL_BE, "Post-synthesis Project. You will be able to add sources, view device resources, run design analysis, planning and implementation."); // b (PAResourceItoN.NewProjectWizard_POST_SYNTHESIS_PROJECT_YOU_WILL_BE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories", "New Project"); // a (PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/sources");
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files", "New Project"); // a (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES)
+dismissFileChooser();
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files", "New Project"); // a (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES)
+dismissFileChooser();
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add", "New Project"); // C (PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, Add)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // aq (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, Add Files...)
+setFileChooser("/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc");
+// [GUI Memory]: 167 MB (+172193kb) [00:04:24]
+// [Engine Memory]: 1,425 MB (+1342736kb) [00:04:24]
+// [GUI Memory]: 178 MB (+2776kb) [00:04:25]
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Parts", 0); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,439 MB. GUI used memory: 71 MB. Current time: 12/28/24, 4:39:24 PM EST
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "bas"); // OverlayTextField (PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Basys3 ; Basys3 ; Basys3 ; digilentinc.com ; 1.2 ; Basys3 ; 236 ; C.0 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 32 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "Basys3", 0, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTableHyperlink(PAResourceAtoD.BoardChooser_BOARD_TABLE, PAResourceTtoZ.XHubBoardTable_BOARD_NAME_LINE_1, "Basys3"); // k (PAResourceTtoZ.XHubBoardTable_BOARD_NAME_LINE_1)
+openHTML ("https://digilent.com/reference/programmable-logic/basys-3/start");n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("BACK", "Back", "New Project"); // JButton (BACK)
+selectButton("BACK", "Back", "New Project"); // JButton (BACK)
+selectButton("BACK", "Back", "New Project"); // JButton (BACK)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "SourceRoot ; 1 ; sources ; false ; /home/yanarion/Projet/basys3_enigme_scout", 0, "/home/yanarion/Projet/basys3_enigme_scout", 4); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,551 MB (+57248kb) [00:04:51]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project project_1 /home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1 -part xc7a35tcpg236-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:basys3:part0:1.2 [current_project] 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property design_mode GateLvl [current_fileset] 
+// Tcl Message: INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None". 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc 
+selectButton("FINISH", "Finish", "New Project"); // JButton (FINISH)
+// 'g' command handler elapsed time: 78 seconds
+dismissDialog("Create Project"); // bh (Create Project Progress)
+dismissDialog("New Project"); // f (dialog4)
+// [Engine Memory]: 1,653 MB (+26159kb) [00:04:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,655 MB. GUI used memory: 77 MB. Current time: 12/28/24, 4:39:44 PM EST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/sources");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (dialog10)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+dismissDialog("Add Sources"); // c (dialog12)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 12, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_NO, "No", "No Implementation Results Available"); // a (RDIResource.BaseDialog_NO)
+dismissDialog("No Implementation Results Available"); // u (dialog13)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 12, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis]", 2); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // u (dialog14)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "15", 14); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "15", 14); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "16", 15); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cM' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // cP (dialog15)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]). 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).  
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Launch Run Critical Messages"); // bc (dialog16)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+dismissFileChooser();
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+// 'f' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (dialog17)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_NETLIST_BLOCK_DESIGN_AND_IP, "Add design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_NETLIST_BLOCK_DESIGN_AND_IP)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+// 'f' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (dialog19)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, basys_3_top.xdc]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, basys_3_top.xdc]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 13, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bh (Open Hardware Manager Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,705 MB. GUI used memory: 82 MB. Current time: 12/28/24, 4:40:54 PM EST
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2024.2.0   ****** Build date   : Oct 30 2024-14:19:07     **** Build number : 2024.2.1730312347       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CFAA 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bh (Auto Connect Progress)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210183B03CFAA (1) ; Open", 1, "xilinx_tcf/Digilent/210183B03CFAA (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210183B03CFAA (1) ; Open", 1, "xilinx_tcf/Digilent/210183B03CFAA (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+// Elapsed time: 233 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210183B03CFAA (1) ; Open", 1, "xilinx_tcf/Digilent/210183B03CFAA (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,725 MB. GUI used memory: 84 MB. Current time: 12/28/24, 4:44:59 PM EST
+// Elapsed time: 104 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device..."); // aq (PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, add_config_memory_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY
+// Elapsed time: 18 seconds
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "sp"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "sp"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "Spansion"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+// Elapsed time: 33 seconds
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "MX25L3233FMI-08G"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "s25"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "s25fl032"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD", "s25fl032"); // OverlayTextField (PAResourceAtoD.CfgMemPartChooser_TABLE_SEARCH_FIELD)
+selectTable(PAResourceAtoD.CfgMemPartChooser_TABLE, "s25fl032p-spi-x1_x2_x4 ; s25fl032p ; Infineon ;  ; s25flxxxp ; spi ; 32 ; x1_x2_x4", 0, "Infineon", 2); // b.b (PAResourceAtoD.CfgMemPartChooser_TABLE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Add Configuration Memory Device"); // a (RDIResource.BaseDialog_OK)
+// 'a' command handler elapsed time: 102 seconds
+dismissDialog("Add Configuration Memory Device"); // ac (dialog20)
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0] 
+// Tcl Message: set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Add Configuration Memory Device Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_CONFIG_MEMORY
+dismissDialog("Add Configuration Memory Device Completed"); // u (dialog21)
+setText(PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE, (String) null); // Z (PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE)
+selectMoreButton(PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE, (String) null, "Program Configuration Memory Device"); // s (PAResourceOtoP.ProgramCfgMemDialog_CONTENTS_OF_CONFIGURATION_FILE)
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Program Configuration Memory Device"); // a (RDIResource.BaseDialog_CANCEL)
+// 'U' command handler elapsed time: 10 seconds
+dismissDialog("Program Configuration Memory Device"); // T (dialog22)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMoreButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null, "Program Device"); // s (PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/tools/Xilinx/Vivado/2024.2/bin", 5); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Program Device"); // a (RDIResource.BaseDialog_CANCEL)
+// 'E' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // aT (dialog24)
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device..."); // aq (PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, add_config_memory_menu)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210183B03CFAA (1) ; Open", 1, "xilinx_tcf/Digilent/210183B03CFAA (1)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger - Node
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl032p-spi-x1_x2_x4 ; ", 4, "s25fl032p-spi-x1_x2_x4", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ; ", 3, "XADC", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl032p-spi-x1_x2_x4 ; ", 4, "s25fl032p-spi-x1_x2_x4", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl032p-spi-x1_x2_x4 ; ", 4, "s25fl032p-spi-x1_x2_x4", 0, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Configuration Memory Device Properties..."); // aq (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectMoreButton(PAResourceEtoH.HardwareCfgMemPropPanels_SPECIFY_CONFIGURATION_MEMORY_PROGRAMMING, (String) null); // s (PAResourceEtoH.HardwareCfgMemPropPanels_SPECIFY_CONFIGURATION_MEMORY_PROGRAMMING)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/xdc", 1); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado", 2); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation", 3); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+// Elapsed time: 29 seconds
+setFileChooser("/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/top_labo_3.bit");
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin  
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2024.2 (64-bit)
+# SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build: 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Current time: Sat Dec 28 16:50:08 EST 2024
+# Process ID (PID): 137869
+# OS: Linux
+# User: yanarion
+# Project: project_1
+# Part: Basys3 (xc7a35tcpg236-1)
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.cmd.CommandFailedException:  ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin
+ (See /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado_pid137869.debug)
+*/
+// Tcl Message: set_property PROGRAM.FILES "/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/top_labo_3.bit" [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin 
+// HOptionPane Error: 'ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin (Vivado v2024.2 (64-bit))'
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin  
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2024.2 (64-bit)
+# SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build: 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Current time: Sat Dec 28 16:50:08 EST 2024
+# Process ID (PID): 137869
+# OS: Linux
+# User: yanarion
+# Project: project_1
+# Part: Basys3 (xc7a35tcpg236-1)
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.cmd.CommandFailedException:  ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin
+ (See /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado_pid137869.debug)
+*/
+// Tcl Message: set_property PROGRAM.FILES "/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/top_labo_3.bit" [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]] 
+// Tcl Message: ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin 
+// HOptionPane Error: 'ERROR: [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin (Vivado v2024.2 (64-bit))'
+selectButton("OptionPane.button", "OK", "Vivado v2024.2 (64-bit)"); // JButton (OptionPane.button)
+selectButton("OptionPane.button", "OK", "Vivado v2024.2 (64-bit)"); // JButton (OptionPane.button)
+// Elapsed time: 161 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl032p-spi-x1_x2_x4 ; ", 4, "s25fl032p-spi-x1_x2_x4", 0, false, false, false, false, true, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE) - Popup Trigger
+// Elapsed time: 118 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "s25fl032p-spi-x1_x2_x4 ; ", 4, "s25fl032p-spi-x1_x2_x4", 0, false); // m (PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 12, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_NO, "No", "No Implementation Results Available"); // a (RDIResource.BaseDialog_NO)
+dismissDialog("No Implementation Results Available"); // u (dialog27)
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis]", 6, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 8, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "Launch directory:", "Choose Location...", 1); // d (PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, Launch directory:)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// HOptionPane Warning: 'The proposed launch directory is non-default and will reduce the portability of this project. Do you wish to proceed anyway? (project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2)'
+dismissDialog("Launch Runs"); // g (dialog28)
+selectButton("OptionPane.button", "OK", "project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2"); // JButton (OptionPane.button)
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]). 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).  
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).", 0); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// 'a' command handler elapsed time: 14 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog30)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 8, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "Launch directory:", "Choose Location...", 1); // d (PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, Launch directory:)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/sources");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// HOptionPane Warning: 'The proposed launch directory is non-default and will reduce the portability of this project. Do you wish to proceed anyway? (project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2)'
+dismissDialog("Launch Runs"); // g (dialog31)
+selectButton("OptionPane.button", "OK", "project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2"); // JButton (OptionPane.button)
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]). 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).  
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).", 0); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// 'a' command handler elapsed time: 10 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog33)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis, Open Synthesized Design]", 7, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,807 MB. GUI used memory: 90 MB. Current time: 12/28/24, 4:56:04 PM EST
+// Tcl Message: link_design -name netlist_1 
+// Tcl Message: Command: link_design -name netlist_1 Design is defaulting to srcset: sources_1 Design is defaulting to constrset: constrs_1 Design is defaulting to project part: xc7a35tcpg236-1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,983 MB. GUI used memory: 90 MB. Current time: 12/28/24, 4:56:06 PM EST
+// [Engine Memory]: 1,988 MB (+263959kb) [00:21:16]
+// [Engine Memory]: 2,171 MB (+88124kb) [00:21:16]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,334 MB (+56563kb) [00:21:17]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7958.465 ; gain = 0.000 ; free physical = 286 ; free virtual = 10091 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc] 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc:120] 
+// Tcl Message: INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc:121] 
+// Tcl Message: Finished Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8056.965 ; gain = 0.000 ; free physical = 185 ; free virtual = 9989 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// Tcl Message: 6 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered. link_design completed successfully 
+// 'dV' command handler elapsed time: 4 seconds
+dismissDialog("Open Synthesized Design"); // bh (Open Synthesized Design Progress)
+// Device view-level: 0.0
+// RouteApi::initDelayMediator elapsed time: 3.4s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog34)
+// [Engine Memory]: 2,724 MB (+286609kb) [00:21:28]
+// [GUI Memory]: 193 MB (+6452kb) [00:21:29]
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis, Open Synthesized Design]", 7); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis, Open Synthesized Design]", 7); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis]", 6); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Netlist Analysis]", 6); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+dismissDialog("Add Sources"); // c (dialog35)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 216 MB (+14528kb) [00:21:35]
+selectComboBox(PAResourceQtoS.SettingsProjectGeneralPage_TARGET_LANGUAGE, "Target language:", "VHDL", 0); // d (PAResourceQtoS.SettingsProjectGeneralPage_TARGET_LANGUAGE, Target language:)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,784 MB. GUI used memory: 147 MB. Current time: 12/28/24, 4:56:29 PM EST
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 3, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,784 MB. GUI used memory: 147 MB. Current time: 12/28/24, 4:56:37 PM EST
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // e (dialog36)
+// [Engine Memory]: 3,306 MB (+468076kb) [00:22:10]
+// [GUI Memory]: 233 MB (+6599kb) [00:22:10]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 8, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,306 MB. GUI used memory: 136 MB. Current time: 12/28/24, 4:57:04 PM EST
+selectRadioButton(PAResourceItoN.LaunchPanel_GENERATE_SCRIPTS_ONLY, "Generate scripts only"); // a (PAResourceItoN.LaunchPanel_GENERATE_SCRIPTS_ONLY)
+selectRadioButton(PAResourceItoN.LaunchPanel_LAUNCH_RUNS_ON_LOCAL_HOST, "Launch runs on local host:"); // a (PAResourceItoN.LaunchPanel_LAUNCH_RUNS_ON_LOCAL_HOST)
+selectComboBox(PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, "Launch directory:", "Choose Location...", 1); // d (PAResourceItoN.LaunchPanel_LAUNCH_DIRECTORY, Launch directory:)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/sources");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// HOptionPane Warning: 'The proposed launch directory is non-default and will reduce the portability of this project. Do you wish to proceed anyway? (project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2)'
+dismissDialog("Launch Runs"); // g (dialog37)
+selectButton("OptionPane.button", "OK", "project_1 - [/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.xpr] - Vivado 2024.2"); // JButton (OptionPane.button)
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: ERROR: [Common 17-53] User Exception: No GateLvl source files specified 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-53] User Exception: No GateLvl source files specified  
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// 'a' command handler elapsed time: 16 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog39)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+dismissFileChooser();
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+// 'f' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (dialog40)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+dismissDialog("Add Sources"); // c (dialog42)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // aq (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES)
+setFolderChooser("/home/yanarion/Projet/basys3_enigme_scout/sources");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES, "Add sources from subdirectories", false); // f (PAResourceQtoS.SrcChooserPanel_ADD_SOURCES_FROM_SUBDIRECTORIES): FALSE
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (dialog43)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Device view-level: 0.0
+// Tcl Message: add_files -norecurse /home/yanarion/Projet/basys3_enigme_scout/sources/impl_1/netlist_EMPTY.dcp 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint, netlist_EMPTY.dcp]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (PAResourceOtoP.ProjectTab_RELOAD)
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,844 MB. GUI used memory: 131 MB. Current time: 12/28/24, 4:57:57 PM EST
+// Engine heap size: 2,844 MB. GUI used memory: 133 MB. Current time: 12/28/24, 4:57:57 PM EST
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,846 MB. GUI used memory: 112 MB. Current time: 12/28/24, 4:57:58 PM EST
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.5s
+// DeviceView Instantiated
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8901.367 ; gain = 0.000 ; free physical = 649 ; free virtual = 9088 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2024.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/xdc/basys_3_top.xdc] Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/sources/impl_1/netlist_EMPTY/netlist_EMPTY.xdc] Finished Parsing XDC File [/home/yanarion/Projet/basys3_enigme_scout/sources/impl_1/netlist_EMPTY/netlist_EMPTY.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device view-level: 0.0
+dismissDialog("Reloading"); // bh (Reloading Progress)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog45)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// RouteApi::initDelayMediator elapsed time: 3.3s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Add Sources"); // c (dialog46)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Compile Order", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectButton(RDIResource.HToolBar_SETTINGS, "Sources_settings"); // w (RDIResource.HToolBar_SETTINGS, Sources_settings): TRUE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Design Checkpoint]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+closeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // R (PAResourceOtoP.PAViews_NETLIST, Netlist)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ai (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ai (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // an (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // an (PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // an (PAResourceItoN.MainMenuMgr_CHECKPOINT, Checkpoint)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // an (PAResourceItoN.MainMenuMgr_CONSTRAINTS, Constraints)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // an (PAResourceItoN.MainMenuMgr_IP, IP)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // an (PAResourceItoN.MainMenuMgr_TEXT_EDITOR, Text Editor)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_FILE, "New File..."); // aq (PAResourceCommand.PACommandNames_NEW_FILE, new_file_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_NEW_FILE
+dismissFileChooser();
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 11, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // u (dialog48)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cM' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cP (dialog49)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Sat Dec 28 16:59:00 2024] Launched impl_1... Run output will be captured here: /home/yanarion/Projet/basys3_enigme_scout/ProjetVivado/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Implementation Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // W.a (dialog50)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin. ]", 2, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).. ]", 4, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).. ]", 4, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).. ]", 4, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).. ]", 4); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Labtoolstcl 44-518] Invalid configuration file assigned. Valid file type extension .mcs or .bin. ]", 2); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+dismissDialog("Add Sources"); // c (dialog51)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // e (dialog36)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // aq (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (dialog52)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Language Templates]", 3, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_LANGUAGE_TEMPLATES
+expandTree(PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE, "[Templates, VHDL]", 1); // a (PAResourceItoN.LanguageTemplatesDialog_TEMPLATES_TREE)
+dismissDialog("Language Templates"); // a (dialog53)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+dismissDialog("Settings"); // e (dialog36)
+// [GUI Memory]: 324 MB (+82686kb) [00:25:16]
+// [Engine Memory]: 3,902 MB (+451457kb) [00:25:16]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_NETLIST_BLOCK_DESIGN_AND_IP, "Add design sources"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_NETLIST_BLOCK_DESIGN_AND_IP)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,902 MB. GUI used memory: 136 MB. Current time: 12/28/24, 5:00:09 PM EST
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/xdc", 2); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/synthese-implementation", 1); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+selectComboBox(RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES, "/home/yanarion/Projet/basys3_enigme_scout/ProjetVivado", 3); // aa.b (RDIResource.HJFileChooserRecentListPreviewHelper_RECENT_DIRECTORIES)
+dismissFileChooser();
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+// 'f' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (dialog54)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ai (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ai (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // an (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ai (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+selectMenu("Dataflow Design"); // an (Dataflow Design)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ai (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // an (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ai (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 38, 106); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 358, 108); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 358, 108, false, false, false, false, true); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 358, 108); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 409, 115); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,859 MB. GUI used memory: 141 MB. Current time: 12/28/24, 5:02:23 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,859 MB. GUI used memory: 142 MB. Current time: 12/28/24, 5:05:06 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,859 MB. GUI used memory: 140 MB. Current time: 12/28/24, 5:05:08 PM EST

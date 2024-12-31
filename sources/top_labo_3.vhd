@@ -94,5 +94,4 @@ begin
             when others => an <= "0111"; seg <= symboles(3);
         end case;
     end process;
-        
 end arch;

@@ -40,7 +40,8 @@ place_design
 route_design
 
 # génération du fichier de configuration
-write_bitstream -force top_labo_3.bit
+# write_bitstream -force top_labo_3.bit
+write_bitstream -force -bin_file testFlash
 
 # programmation du FPGA
 open_hw_manager

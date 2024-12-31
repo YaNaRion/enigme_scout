@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Dec 31 00:38:18 2024
+# Process ID         : 915487
+# Current directory  : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation
+# Command line       : vivado -mode tcl -script ./labo_3_synth_impl.tcl
+# Log file           : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.log
+# Journal file       : /home/yanarion/Projet/basys3_enigme_scout/synthese-implementation/vivado.jou
+# Running On         : YannTourArch
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor
+# CPU Frequency      : 3878.808 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 50435 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 54730 MB
+# Available Virtual  : 40142 MB
+#-----------------------------------------------------------
+source ./labo_3_synth_impl.tcl
+# read_vhdl -vhdl2008 ../sources/utilitaires_inf3500_pkg.vhd
+# read_vhdl -vhdl2008 ../sources/generateur_horloge_precis.vhd
+# read_vhdl -vhdl2008 ../sources/monopulseur.vhd 
+# read_vhdl -vhdl2008 ../sources/cadenas_labo_3.vhd
+# read_vhdl -vhdl2008 ../sources/top_labo_3.vhd
+# read_xdc ../xdc/basys_3_top.xdc
+# synth_design -top top_labo_3 -part xc7a35tcpg236-1 -assert
+Command: synth_design -top top_labo_3 -part xc7a35tcpg236-1 -assert
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 915508
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1888.262 ; gain = 417.855 ; free physical = 5922 ; free virtual = 37180
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-9486] formal port 'switch' has no actual or default value [/home/yanarion/Projet/basys3_enigme_scout/sources/top_labo_3.vhd:73]
+INFO: [Synth 8-8898] 'switch' is declared here [/home/yanarion/Projet/basys3_enigme_scout/sources/cadenas_labo_3.vhd:21]
+INFO: [Synth 8-11252] unit 'arch' is ignored due to previous errors [/home/yanarion/Projet/basys3_enigme_scout/sources/top_labo_3.vhd:97]
+INFO: [Synth 8-10443] VHDL file '/home/yanarion/Projet/basys3_enigme_scout/sources/top_labo_3.vhd' is ignored due to errors
+ERROR: [Synth 8-12189] Failed to read vhdl '/home/yanarion/Projet/basys3_enigme_scout/sources/top_labo_3.vhd'
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1960.199 ; gain = 489.793 ; free physical = 5850 ; free virtual = 37108
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
