@@ -27,7 +27,7 @@ end cadenas_labo_3;
 
 architecture arch of cadenas_labo_3 is
     
-    type etat_type is (e_00, e_01, e_02, e_03, e_04, e_05, e_06);
+    type etat_type is (e_00, e_01, e_02, e_03, e_04, e_05, e_06, e_07, e_08, e_09, e_10);
     signal etat : etat_type := e_00;
     
  --    type combinaison_type is array (0 to M - 1) of std_logic_vector(N - 1 downto 0);
@@ -45,56 +45,33 @@ begin
         if reset = '1' then -- remet la state machine a 0
             etat <= e_00;
         elsif rising_edge(clk) then
-            if switch = "0000000000000001" then
-                etat <= e_01;
-            else
-                etat <= e_00;
-            end if;
-     --        case etat is
-     --            when e_00 =>
-     --                if boutons = combinaison_mod(0) then
-     --                    etat <= e_01;
-     --                else
-     --                    etat <= e_00;
-     --                end if;
-     --            when e_01 =>
-     --                if boutons = combinaison_mod(1) then
-     --                    etat <= e_02;
-     --                elsif boutons /=  combinaison_mod(1)  and boutons /= "0000" then
-     --                    etat <= e_00;
-     --                end if;
-     --            when e_02 =>
-     --                if boutons = combinaison_mod(2) then
-     --                    etat <= e_03;
-     --                elsif boutons /=  combinaison_mod(2) and boutons /= "0000" then
-     --                    etat <= e_00;
-     --                end if;
-     --            when e_03 =>
-     --                if boutons = combinaison_mod(3) then
-     --                    etat <= e_04;
-     --                    elsif boutons /=  combinaison_mod(3)  and boutons /= "0000" then
-     --                            etat <= e_00;
-     --                end if;
-     --            when e_04 =>
-     --                if boutons = combinaison_mod(4) then
-     --                    etat <= e_05;
-     --                    elsif boutons /=  combinaison_mod(4)  and boutons /= "0000"  then
-     --                            etat <= e_00;
-     --                end if;
-     --            when e_05 =>
-     --                if boutons = "0101" then
-     --                    etat <= e_06;
-     --                end if;
-     --            when e_06 => --Pour la partie 2
-					-- if boutons = "1010" then
-     --                    etat <= e_00;
-     --                elsif count < 5  and (boutons = "1000" or boutons = "0100" or boutons = "0010" or boutons = "0001") and boutons /= "0000" then
-     --                    combinaison_temps(count) <= boutons;
-     --                    count := count + 1;
-     --                end if;                
-     --            when others =>
-     --               etat <= e_00;
-     --        end case;
+            case switch is 
+                when "0000000000000001" =>
+                    etat <= e_01;
+                -- FACILE
+                when "0001111011010010" => -- T9
+                    etat <= e_02;
+                when "0110101111000110" => -- Samourail
+                    etat <= e_03;
+                when "0001101100111001" => -- Avocat
+                    etat <= e_04;
+                -- MOYEN
+                when "0000000110100100" => -- Tic-Tac-To
+                    etat <= e_05;
+                when "0010010010001000" => -- Fruit
+                    etat <= e_06;
+                when "0001111011001100" => -- Porter
+                    etat <= e_07;
+                -- DIFFICILE
+                when "0000000010000001" => -- Equation bool
+                    etat <= e_08;
+                when "0001010111010101" => -- Franc-Macon
+                    etat <= e_09;
+                when "0101111100000101" => -- Algebre
+                    etat <= e_10;
+                when others =>
+                    etat <= e_00;
+            end case;
         end if;
     end process;
     
@@ -105,11 +82,50 @@ begin
             when e_00 =>
                 ouvrir <= '0';
                 alarme <= '1';
-                message <= "e_00";
+                message <= "NOPE";
             when e_01 =>
                 ouvrir <= '0';
                 alarme <= '0';
                 message <= "YAYA";
+            -- FACILE
+            when e_02 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-09-";
+            when e_03 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-00-";
+            when e_04 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-08-";
+            -- MOYEN
+            when e_05 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-32-";
+            when e_06 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-10-";
+            when e_07 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-24-";
+            -- DIFFICILE
+            when e_08 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-13-";
+            when e_09 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-15-";
+            when e_10 =>
+                ouvrir <= '0';
+                alarme <= '0';
+                message <= "-37-";
             when others =>
                 ouvrir <= '0';
                 alarme <= '0';

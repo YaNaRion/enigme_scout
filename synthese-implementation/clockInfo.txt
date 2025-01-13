@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.2
-| Date         : Tue Dec 31 00:39:08 2024
+| Date         : Thu Jan  9 22:16:01 2025
 | Host         : YannTourArch
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
